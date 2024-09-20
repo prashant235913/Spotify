@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Ubuntu+Condensed&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: rgb(255 , 255 , 255);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #282828;
+    /* font-family: 'Gowun Batang' , sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+/* Playlist Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.playlist {
+    flex: 1;
+    
+}
+
+.playlist ul {
+    list-style-type: none;
+    
+}
+
+.playlist ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #1e1e1e;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 100px;
+}
+
+.playlist ul li i{
+    width: 30px;
+}
+
+.banner {
+    flex: 1;
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Music Controls */
+.controls {
+    background-color: #282828;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.progress-container {
+    flex: 2;
+}
+
+#progress-bar {
+    width: 100%;
+    cursor: pointer;
+}
+
+.player-controls {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.song-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.song-info img {
+    width: 50px;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.song-info img.show {
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="brand">
+            <img src="logo.png" alt="Spotify Logo">
+            <h1>Spotify</h1>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>Search</li>
+            <li>Your Library</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="playlist">
+            <h2>Best of Anne-Marie</h2>
+            <ul>
+                <li id="song1">2002 <i class="fa-solid fa-play" id="play1"></i></li>
+                <li id="song2">Birthday <i class="fa-solid fa-play" id="play2"></i></li>
+                <li id="song3">Friends <i class="fa-solid fa-play" id="play3"></i></li>
+                <li id="song4">Alarm <i class="fa-solid fa-play" id="play4"></i></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <img src="bg.jpg" alt="Anne-Marie">
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="progress-container">
+            <input type="range" id="progress-bar" value="0" min="0" max="100">
+        </div>
+        <div class="player-controls">
+            <i class="fa-solid fa-backward" id="backward"></i>
+            <i class="fa-solid fa-play" id="masterPlay"></i>
+            <i class="fa-solid fa-forward" id="forward"></i>
+        </div>
+        <div class="song-info">
+            <img src="song.gif" alt="Playing" id="gif" class="hidden">
+            <p id="currentSong">2002</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
